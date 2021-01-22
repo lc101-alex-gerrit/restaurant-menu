@@ -9,21 +9,15 @@ public class MenuItem {
     private String category;
     private boolean isNew;
     private Date dateCreated;
-    private String pictureLocation;
-    private int calories;
 
     public MenuItem(double price,
                     String name,
                     String description,
-                    String category,
-                    String pictureLocation,
-                    int calories) {
+                    String category) {
         this.price = price;
         this.name = name;
         this.description = description;
         this.category = category;
-        this.pictureLocation = pictureLocation;
-        this.calories = calories;
         this.isNew = true;
         this.dateCreated = new Date();
     }
@@ -58,22 +52,6 @@ public class MenuItem {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public String getPictureLocation() {
-        return pictureLocation;
-    }
-
-    public void setPictureLocation(String pictureLocation) {
-        this.pictureLocation = pictureLocation;
-    }
-
-    public int getCalories() {
-        return calories;
-    }
-
-    public void setCalories(int calories) {
-        this.calories = calories;
     }
 
     public boolean isNew() {
