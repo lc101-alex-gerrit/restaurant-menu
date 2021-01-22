@@ -1,5 +1,12 @@
-## IntelliJ config
+### IntelliJ IDEA ###
 .idea/
+*.iws
+*.iml
+*.ipr
+out/
 
-## macOS system files
+### VS Code ###
+.vscode/
+
+### macOS ###
 .DS_Store
