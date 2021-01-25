@@ -1,6 +1,7 @@
-package restuarant;
+package restaurant;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class MenuItem {
     private double price;
@@ -62,4 +63,19 @@ public class MenuItem {
         return dateCreated;
     }
 
+    @Override
+    public String toString() {
+        return name + "\n" + description + "\n$" + price;
+    }
+
+    @Override
+    public boolean equals(Object otherItem) {
+        if (this == otherItem)
+            return true;
+        if (otherItem == null || getClass() != otherItem.getClass())
+            return false;
+        MenuItem menuItem = (MenuItem) otherItem;
+        return Objects.equals(name, menuItem.name) &&
+                Objects.equals(category, menuItem.category);
+    }
 }

@@ -1,4 +1,4 @@
-package restuarant;
+package restaurant;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,6 +52,14 @@ public class Menu {
 
     public ArrayList<MenuItem> getItems() {
         return items;
+    }
+
+    public void printMenu() {
+        System.out.println("****");
+        for (MenuItem menuItem : items) {
+            System.out.println(menuItem.toString());
+            System.out.println("****");
+        }
     }
 
 }
